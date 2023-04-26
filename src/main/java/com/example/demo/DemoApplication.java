@@ -15,6 +15,6 @@ public class DemoApplication {
 
 	@RequestMapping("/")
 	String sayHello() {
-		return "Java Application first deployment!";
+		return "Configure with azure app.";
 	}
 }
