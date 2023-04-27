@@ -14,7 +14,7 @@ public class SecretKeyController {
 	  @RequestMapping("/")
 	   public String getKeyvaultValue()
 	   {
-	      return getStoredValue("myPassword");
+	      return getStoredValue("Shubhang1234");
 	   }
 	 
 	   private String getStoredValue(String keyName){	      
@@ -23,7 +23,7 @@ public class SecretKeyController {
 	      .vaultUrl(keyVaultUri)
 	      .credential(new DefaultAzureCredentialBuilder().build())
 	      .buildClient();
-	      KeyVaultSecret storedSecret = secretClient.getSecret("myPassword");
+	      KeyVaultSecret storedSecret = secretClient.getSecret("Shubhang1234");
 	      return storedSecret.getValue();
 	   }
 }
